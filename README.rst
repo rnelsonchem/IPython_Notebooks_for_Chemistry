@@ -7,7 +7,7 @@ their area of application.
 
 The Python script 'run_notebook.py' simply starts the notebook from folder
 that it is located. This alleviates the need to understand the command line
-instructions to navigate to a particular folder and start the IPython
+instructions needed navigate to a particular folder and start the IPython
 notebook. Just drop a copy of this script into the desired folder and run it
 with Python. The method to run the script will be a little different depending
 on your operating system and installation method. (If double-clicking the icon
@@ -18,8 +18,8 @@ Installation
 ============
 
 These Notebooks don't require any installation, *per se*. However, in order to
-run these Notebooks, you will need a minimal install of the newest releases of
-Python_ 2, Numpy_, Matplotlib_, Scipy_, and IPython_ with all their associated
+run them, you will need a minimal install of the newest releases of Python_ 2,
+Numpy_, Matplotlib_, Scipy_, and IPython_ with all their associated
 dependencies. This can be quite time consuming, but installation instructions
 and binary installers for each package can be found from their respective
 websites.
@@ -31,12 +31,15 @@ websites.
 .. _IPython: http://ipython.org/
 
 By far, the easiest way to install the necessary packages is to use one of the
-prepackaged options for your operating system, such as `Python(x,y)`_ 
-(Windows), `Enthought Python Distribution`_ (all OSes), or `Anaconda`_ (all OS,
-broken uninstaller for Windows as of v1.2.1).
+prepackaged options for your operating system, such as `Python(x,y)`_
+(Windows), `Enthought Python Distribution`_ (all OSes), Canopy_ (all OSes,
+this is also from Enthought and is effectively the next-gen EPD, use this
+first if possible), or `Anaconda`_ (all OS, broken uninstaller for Windows as
+of v1.2.1).
 
 .. _Python(x,y): http://code.google.com/p/pythonxy/
-.. _Enthought Python Distribution: http://www.enthought.com/products/epd.php
+.. _Enthought Python Distribution: https://www.enthought.com/products/epd/
+.. _Canopy: https://www.enthought.com/products/canopy/
 .. _Anaconda: http://continuum.io/downloads.html
 
 Some specific installation notes are provided here for reference.
