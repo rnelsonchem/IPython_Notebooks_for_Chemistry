@@ -1,46 +1,65 @@
 Introduction
 ============
 
-These are a series of IPython Notebooks for exploring complex mathematical
-concepts in chemistry. The notebooks are organized in folders according to
-their area of application.
+These are a series of interactive worksheets for exploring complex
+mathematical concepts in chemistry. These worksheets must be run using
+the new web-based notebook_ interface to IPython_, which is an advanced,
+interactive interpreter for the Python_ programming language. IPython was
+specifically designed for interactive, scientific data analysis and
+simulation, so it is an ideal tool for exploring mathematical concepts related
+to chemistry. In it's original incarnation, IPython was designed to be run
+from inside a terminal or command prompt window; however, the newest releases
+have a web-based notebook like interface that allows not only for interactive
+code generation but also textual markup that can be used to explain the
+code workings.
 
-The Python script 'run_notebook.py' simply starts the notebook from folder
-that it is located. This alleviates the need to understand the command line
-instructions needed navigate to a particular folder and start the IPython
-notebook. Just drop a copy of this script into the desired folder and run it
-with Python. The method to run the script will be a little different depending
-on your operating system and installation method. (If double-clicking the icon
-doesn't work.  Try right-clicking on the icon. There may be an option to "Run
-with..." where you can choose the Python interpreter.)
+The main point of these notebooks is to teach mathematical concepts related to
+chemistry. With that in mind, large portions of the underlying Python code
+have been abstracted from the main worksheet. Some small amount of code
+has been left in to allow students to interactively modify variable
+values to explore the changes in simulated data. 
+
+A secondary goal of these notebooks is to teach Python programming as a
+powerful method of data analysis, so the abstracted code is contained in
+Python program files (ending in *\.py*) contained in the individual notebook
+folders. These files are simple text files that can be read with any text
+editor. Students that are interested in learning more about how the data is
+actually manipulated are encouraged to explore these files on their own. A
+number of Python programming tutorials are available on the web; however, many
+are geared towards computer scientists and programmers. The `Scientific Python
+Lecture Notes`_ are a continually-evolving tutorial geared toward scientists
+interested in learning Python and some third-party libraries in the context of
+scientific work. In addition, several interactive Python tutorials are
+contained in this download; however, these will not be as comprehensive as
+other tutorials on the web.
+
+These notebooks are organized into folders according to their area of
+application. The Python script 'run_notebook.py' starts the IPython notebook
+server from the folder that it is located.  This alleviates the need to
+understand the command line instructions necessary to navigate to a particular
+folder and start the IPython notebook. Just drop a copy of this script into
+the desired folder and run it with Python. The method to run the script will
+be a little different depending on your operating system and installation
+method. (If double-clicking the icon doesn't work.  Try right-clicking on the
+icon. There may be an option to "Run with..." where you can choose the Python
+interpreter.)
 
 Installation
 ============
 
-These Notebooks don't require any installation, *per se*. However, in order to
+These notebooks don't require any installation, *per se*. However, in order to
 run them, you will need a minimal install of the newest releases of Python_ 2,
 Numpy_, Matplotlib_, Scipy_, and IPython_ with all their associated
-dependencies. This can be quite time consuming, but installation instructions
-and binary installers for each package can be found from their respective
-websites.
-
-.. _Python: http://www.python.org/
-.. _Numpy: http://www.numpy.org/
-.. _Matplotlib: http://matplotlib.org/
-.. _Scipy: http://www.scipy.org/
-.. _IPython: http://ipython.org/
+dependencies. This installation method can be quite time consuming, but
+installation instructions and binary installers for each package can be found
+from their respective websites.
 
 By far, the easiest way to install the necessary packages is to use one of the
 prepackaged options for your operating system, such as `Python(x,y)`_
-(Windows), `Enthought Python Distribution`_ (all OSes), Canopy_ (all OSes,
-this is also from Enthought and is effectively the next-gen EPD, use this
-first if possible), or `Anaconda`_ (all OS, broken uninstaller for Windows as
-of v1.2.1).
-
-.. _Python(x,y): http://code.google.com/p/pythonxy/
-.. _Enthought Python Distribution: https://www.enthought.com/products/epd/
-.. _Canopy: https://www.enthought.com/products/canopy/
-.. _Anaconda: http://continuum.io/downloads.html
+(Windows), Canopy_ (all OSes, this is also from Enthought and is effectively
+the next-gen EPD, use this first if possible), `Enthought Python
+Distribution`_ (EPD, all OSes), or `Anaconda`_ (all OS, broken uninstaller for
+Windows as of v1.2.1).
 
 Some specific installation notes are provided here for reference.
 
@@ -49,15 +68,18 @@ EPD
 
 The Enthought Python Distribution (EPD) has a very convenient package
 management system, *enpkg*, which allows you to update packages with a few
-simple commands. The only gotcha is that you must use the *sudo* command when
-executing these commands on on a Mac/Linux.
+simple commands. The only gotcha is that you must use *sudo* when executing
+these commands on on a Mac/Linux.
 
-https://support.enthought.com/entries/22415022-Using-enpkg-to-update-EPD-packages
+Jonathan March at Enthought has a nice article_ in the `Enthought Knowledge
+Base`_ that describes how to update packages using this function.
 
 Other Useful Installation Info 
 ------------------------------
 
-http://fperez.org/py4science/starter_kit.html
+Fernando Perez, the original author of IPython, has a short webpage_ devoted
+to Python for scientific applications, which contains a variety of
+installation notes.
 
 Potential Pitfalls
 ==================
@@ -85,4 +107,19 @@ running these notebooks.
       and run this process. Stop 'Sophos Web Control Service' and 'Sophos Web
       Intelligence Service'. Restart the IPython Notebook and you should be
       all set.
-    
+
+
+.. _Python: http://www.python.org/
+.. _Numpy: http://www.numpy.org/
+.. _Matplotlib: http://matplotlib.org/
+.. _Scipy: http://www.scipy.org/
+.. _IPython: http://ipython.org/
+.. _Python(x,y): http://code.google.com/p/pythonxy/
+.. _Enthought Python Distribution: https://www.enthought.com/products/epd/
+.. _Canopy: https://www.enthought.com/products/canopy/
+.. _Anaconda: http://continuum.io/downloads.html
+.. _notebook: http://ipython.org/notebook.html
+.. _webpage: http://fperez.org/py4science/starter_kit.html
+.. _article: https://support.enthought.com/entries/22415022-Using-enpkg-to-update-EPD-packages
+.. _Enthought Knowledge Base: https://support.enthought.com/forums 
+.. _Scientific Python Lecture Notes: http://scipy-lectures.github.io/ 
